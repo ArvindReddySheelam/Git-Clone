@@ -73,9 +73,9 @@ Prerequisites
 Installation
 ------------
 
-1.  git clone https://github.com/princeprakhar/Native-Git-Clone-java.git
+1.  git clone https://github.com/ArvindReddySheelam/Git-Clone
     
-2.  cd Native-Git-Clone-java
+2.  cd Native-Git-Clone
     
 3.  javac Main.java
     
@@ -103,22 +103,22 @@ Implementation Details
 
 ### Command Execution
 
-The executeCommand method in the Main class serves as the entry point for all Git commands. It uses a switch statement to delegate to the appropriate method based on the command.
+The Main method in the Main class serves as the entry point for all Git commands. It uses a switch statement to delegate to the appropriate method based on the command.
 
 ### Object Reading and Writing
 
-*   readObject: Reads and decompresses a Git object from the object store.
+*   hash_Object: Reads and decompresses a Git object from the object store.
     
-*   writeObject: Compresses and writes a Git object to the object store.
+*   ls_Tree: Compresses and writes a Git object to the object store.
     
 
 ### Tree Handling
 
-The writeTreeRecursive method recursively creates tree objects for directories, while readTreeObject parses the binary format of tree objects.
+The writeTreeObject method recursively creates tree objects for directories, while readTreeObject parses the binary format of tree objects.
 
 ### Commit Creation
 
-The createCommitObject method assembles commit data, including tree hash, parent commit, author information, and commit message.
+The commitTree method assembles commit data, including tree hash, parent commit, author information, and commit message.
 
 Limitations
 -----------
@@ -129,12 +129,10 @@ This is a basic implementation and does not include all features of Git. Some li
     
 *   Limited error handling and edge case management
     
-*   No networking capabilities (except for the basic clone command)
-    
 *   No index (staging area) management
     
 
-It's meant for educational purposes and may not handle all complex scenarios that the official Git implementation does.
+It's meant for educational purposes and may not handle all the complex scenarios that the official Git implementation does.
 
 Future Enhancements
 -------------------
@@ -161,11 +159,11 @@ To contribute:
 
 1.  Fork the repository
     
-2.  Create a new branch for your feature (git checkout -b feature/AmazingFeature)
+2.  Create a new branch for your feature git checkout -b feature
     
-3.  Commit your changes (git commit -m 'Add some AmazingFeature')
+3.  Commit your changes git commit -m 'Add some AdvancedFeature'
     
-4.  Push to the branch (git push origin feature/AmazingFeature)
+4.  Push to the branch git push origin feature/AdvancedFeature
     
 5.  Open a Pull Request
     
@@ -173,13 +171,12 @@ To contribute:
 License
 -------
 
-This project is open source and available under the [MIT License](https://github.com/princeprakhar/Nitty-gritty-Git-Clone-java/blob/master/LICENSE).
+This project is open source and available under the [MIT License](https://github.com/ArvindReddySheelam/Git-Clone/blob/master/LICENSE).
 
 Acknowledgments
 ---------------
 
-This project was created as an educational exercise to understand the internal workings of Git. It's inspired by the Git version control system but is not affiliated with or endorsed by the official Git project.
-
+This repository is a personal educational project designed to provide a deep understanding of Git's core features by implementing them from scratch. It follows the structured guidance provided by Codecrafters, offering a hands-on approach to learning version control.
 Special thanks to:
 
 *   The Git community for creating and maintaining such a powerful version control system
@@ -190,11 +187,20 @@ Special thanks to:
 Author
 ------
 
-[**Prakhar Deep**](https://github.com/princeprakhar)
+[**Arvind**](https://github.com/ArvindReddySheelam)
+
+Learning Outcomes:
+-----------------
+
+By working through this project, developers can gain a deep understanding of:
+
+The internals of Git's version control system
+The algorithms and data structures used to implement Git's core features
+The principles of distributed version control
+Best practices for writing clean, maintainable, and efficient code
+This repository serves as a valuable resource for anyone interested in learning Git from the ground up or exploring the implementation details of version control systems.
 
 Contact
 -------
 
 If you have any questions, feel free to reach out or open an issue in the GitHub repository.
-
-Happy coding and Git exploring!
