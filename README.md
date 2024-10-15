@@ -1,4 +1,4 @@
-[![progress-banner](https://backend.codecrafters.io/progress/git/c53f42b0-4db3-4ab4-983c-44e18aab7ffa)](https://app.codecrafters.io/users/codecrafters-bot?r=2qF)
+[![progress-banner](https://backend.codecrafters.io/progress/git/c53f42b0-4db3-4ab4-983c-44e18aab7ffa )
 
 Java Git Implementation
 =======================
